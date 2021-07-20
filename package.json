@@ -1,0 +1,38 @@
+{
+  "name": "parcel_template",
+  "version": "1.0.0",
+  "description": "Github template repository for basic webdev projects using Parcel bundler",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run dev",
+    "dev": "parcel ./src/html/index.html",
+    "build": "parcel build ./src/html/index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GilFewster/templates.parcel.git"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env"
+    ]
+  },
+  "browserslist": "defaults",
+  "keywords": [
+    "template"
+  ],
+  "author": "Gil Fewster",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GilFewster/templates.parcel/issues"
+  },
+  "homepage": "https://github.com/GilFewster/templates.parcel#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4",
+    "@babel/core": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "sass": "^1.30.0"
+  }
+}
