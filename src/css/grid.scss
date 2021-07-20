@@ -1,22 +1,3 @@
-// -------------- Utilities --------------
-//  Comment out if not requried
-// ---------------------------------------
-
-@import "./util/normalize";
-@import "./util/boxModelReset";
-@import "./content-mockup.scss";
-
-// -------------- Utilities --------------
-//  Comment out if not requried
-// ---------------------------------------
-
-body,
-html {
-  margin: 0;
-  padding: 0;
-  min-height: 100vh;
-}
-
 #application-container {
   display: grid;
 
