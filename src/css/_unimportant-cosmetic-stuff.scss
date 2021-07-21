@@ -48,30 +48,32 @@ html {
       margin: 0;
 
       li {
-        display: block;
-        overflow: hidden;
         list-style: none;
-        border-radius: 5px;
-        padding: 16px;
-        margin-bottom: 0.5em;
-        background: rgba(0, 0, 0, 0.2);
-
         box-shadow: 0 0 40px 15px inherit;
         transition: box-shadow 750ms;
+        overflow: hidden;
+        border-radius: 5px;
+        margin-bottom: 0.5em;
 
         &:hover {
           box-shadow: 0 0 0 2px orange;
         }
+      }
 
-        a {
-          color: inherit;
-          text-decoration: none;
-          transition: padding 400ms;
-          span {
-            transition: opacity 300ms;
-            white-space: nowrap;
-          }
+      li a {
+        display: block;
+        padding: 16px;
+        background: rgba(0, 0, 0, 0.2);
+
+        // a {
+        color: inherit;
+        text-decoration: none;
+        transition: padding 400ms;
+        span {
+          transition: opacity 300ms;
+          white-space: nowrap;
         }
+        // }
       }
     }
 
@@ -81,7 +83,7 @@ html {
       width: 80px;
       padding: 2em 1em;
 
-      li a {
+      li {
         padding-left: 3px;
         span {
           opacity: 0;
