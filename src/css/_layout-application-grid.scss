@@ -28,6 +28,7 @@ html {
   }
 
   > main {
+    grid-area: page-content;
     grid-area: main;
     display: grid;
     grid-template-areas:
@@ -53,6 +54,7 @@ html {
     }
 
     > #page-content {
+      grid-area: page-content;
       height: 100%;
       overflow-y: scroll;
     }
