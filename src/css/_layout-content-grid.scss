@@ -1,0 +1,45 @@
+#page-content {
+  --width-open: 300px;
+  --width-closed: 50px;
+  --padding: 2em;
+
+  overflow-x: hidden;
+  display: grid;
+
+  grid-template-columns: auto 1fr auto;
+
+  .sidebar {
+    position: relative;
+    transition: all 250ms;
+    overflow-y: scroll;
+
+    width: var(--width-open);
+    padding: var(--padding);
+    background: var(--bg-color-panel);
+
+    &:after {
+      transition: all 250ms;
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      display: block;
+      content: "";
+      width: 0px;
+      background-color: var(--bg-color-panel);
+    }
+
+    &[data-toggle-state="closed"] {
+      overflow: hidden;
+      width: var(--width-closed);
+      &:after {
+        width: calc(var(--width-closed) + var(--padding));
+      }
+    }
+  }
+  #main {
+    padding: 2em;
+    grid-column: 2;
+  }
+}
