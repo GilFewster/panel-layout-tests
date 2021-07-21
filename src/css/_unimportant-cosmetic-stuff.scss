@@ -21,6 +21,10 @@ html {
 #application-container {
   font-family: Arial, Helvetica, sans-serif;
 
+  p {
+    pointer-events: none;
+  }
+
   > header {
     color: var(--text-color-light);
     background: var(--bg-color-app-header);
