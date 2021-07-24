@@ -28,11 +28,10 @@
     "url": "https://github.com/GilFewster/templates.parcel/issues"
   },
   "homepage": "https://github.com/GilFewster/templates.parcel#readme",
-  "dependencies": {},
   "devDependencies": {
-    "parcel-bundler": "^1.12.4",
     "@babel/core": "^7.12.10",
     "@babel/preset-env": "^7.12.11",
+    "parcel-bundler": "^1.12.4",
     "sass": "^1.30.0"
   }
 }

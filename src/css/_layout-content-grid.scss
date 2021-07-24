@@ -1,9 +1,10 @@
-#page-content {
+main {
   --width-open: 300px;
   --width-closed: 50px;
   --padding: 2em;
 
   overflow-x: hidden;
+  overflow-y: hidden;
   display: grid;
 
   grid-template-columns: auto 1fr auto;
